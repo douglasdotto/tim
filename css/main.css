@@ -1,0 +1,296 @@
+/* Fonts */
+@font-face {
+    font-family: 'proxima_nova_thin';
+    src: url('../fonts/proxima-thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_regular';
+    src: url('../fonts/proxima-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_semibold';
+    src: url('../fonts/proxima-nova-semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_black';
+    src: url('../fonts/proximanova-black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_bold';
+    src: url('../fonts/proximanova-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TIMSans';
+    src: url('../fonts/TIMSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /*Gshow*/
+    --gshow-primary: #FF6700;
+    --special-ad: #ffaa00;
+    --text-primary: #333333;
+    --confirmation-btn: #3AB7EA;
+    --footer: #0026D9;
+
+    --secondary: #FFFFFF;
+
+}
+
+@media (min-width: 1200px) {
+    .mt-negative {
+        margin-top: -34px;
+    }
+}
+
+
+.modal-content {
+    height: 100%;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    z-index: 1000;
+}
+
+.close-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.container-background {
+    background-image: url('../images/fundoTim.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-background2 {
+    background: #010522;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description-box {
+    font-family: 'TIMSans';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24.6px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.descriptionFooter-box {
+    font-family: 'TIMSans';
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24.6px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+/* Estilização do destaque do vídeo */
+.video-highlight {
+    border-radius: 14px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilização das miniaturas de vídeo */
+.video-thumbnail {
+    background: #0026D980;
+    color: white;
+    width: 423px;
+    max-width: 423px;
+    height: 191px;
+    border-radius: 14px;
+    opacity: 0.5;
+    gap: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Mantém a proporção de 16x9 dos vídeos */
+.ratio-16x9 {
+    width: 100%;
+    height: 100%;
+}
+
+/* titulo dos videos */
+.video-title {
+    position: absolute;
+    font-family: 'TIMSans';
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+
+.video-title-Principal {
+    position: absolute;
+    font-family: 'TIMSans';
+    top: 20px;
+    left: 40px;
+    z-index: 1;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.play-button {
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    width: 53px;
+    height: 53px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.play-button-thumbnail {
+    position: absolute;
+    bottom: 12px;
+    right: 12px; 
+    transform: none; 
+    width: 53px;
+    height: 53px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.play-button img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remover fundo e mudar cor da paginação */
+.pagination .page-link {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.pagination .page-item.active .page-link {
+    background: none;
+    border: none;
+}
+
+/* Setas brancas do carrossel */
+.carousel-control-next-icon {
+    color: white;
+}
+
+/* Estilização do iframe dos vídeos */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+
+.share-box {
+    border-radius: 8px;
+    text-align: center;
+    border: 0.85px solid #FFFFFF
+}
+
+.share-text {
+    color: white;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--footer);
+}
+
+.secondary-body {
+    background-color: var(--secondary);
+}
+
+a {
+    color: var(--text-primary);
+    /* Sets the text color to the primary color variable defined in your CSS */
+    font-size: 1.2rem;
+    /* Increases the font size */
+}
+
+
+/* Menu options section*/
+
+.menu-links a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    z-index: 999;
+}
+
+.special-ad {
+    background-color: var(--special-ad);
+    /* Using the primary color variable defined in :root */
+    color: var(--secondary);
+    /* Optional: Using the secondary color for text */
+    font-size: 15px;
+    /* Optional: Increases the font size */
+    text-align: center;
+    /* Centers the text inside the div */
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 0.2px;
+}
+
+@media (max-width: 767.98px) {
+    .no-w-100-mobile {
+      width: auto !important;
+    }
+  }
+
+
