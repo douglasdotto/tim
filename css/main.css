@@ -1,38 +1,4 @@
 /* Fonts */
-@font-face {
-    font-family: 'proxima_nova_thin';
-    src: url('../fonts/proxima-thin.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_nova_regular';
-    src: url('../fonts/proxima-regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_nova_semibold';
-    src: url('../fonts/proxima-nova-semibold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_nova_black';
-    src: url('../fonts/proximanova-black.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_nova_bold';
-    src: url('../fonts/proximanova-bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'TIMSans';
@@ -48,9 +14,7 @@
     --text-primary: #333333;
     --confirmation-btn: #3AB7EA;
     --footer: #0026D9;
-
     --secondary: #FFFFFF;
-
 }
 
 @media (min-width: 1200px) {
@@ -111,15 +75,16 @@
 
 .descriptionFooter-box {
     font-family: 'TIMSans';
-    font-size: 19px;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 400;
-    line-height: 24.6px;
     text-align: left;
     color: #FFFFFF;
 }
 
 /* Estilização do destaque do vídeo */
 .video-highlight {
+    min-height: 190px;
     border-radius: 14px;
     margin-bottom: 20px;
     position: relative;
@@ -189,8 +154,8 @@
 .play-button-thumbnail {
     position: absolute;
     bottom: 12px;
-    right: 12px; 
-    transform: none; 
+    right: 12px;
+    transform: none;
     width: 53px;
     height: 53px;
     padding: 0;
@@ -209,12 +174,13 @@
 .pagination .page-link {
     background: none;
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination .page-item.active .page-link {
     background: none;
     border: none;
+    color: white !important;
 }
 
 /* Setas brancas do carrossel */
@@ -279,6 +245,7 @@ a {
     /* Optional: Increases the font size */
     text-align: center;
     /* Centers the text inside the div */
+    font-weight: 700;
 }
 
 /* width */
@@ -289,8 +256,6 @@ a {
 
 @media (max-width: 767.98px) {
     .no-w-100-mobile {
-      width: auto !important;
+        width: auto !important;
     }
-  }
-
-
+}
