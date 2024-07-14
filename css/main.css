@@ -296,11 +296,11 @@ a {
 }
 
 @media (max-width: 991px) {
-    .no-w-100-mobile {
-        width: auto !important;
-    }
-
     .description-box {
         padding: 10px !important;
+    }
+
+    .video-highlight-high {
+        min-height: 420px !important;
     }
 }
