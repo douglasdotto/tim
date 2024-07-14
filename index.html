@@ -215,44 +215,44 @@
     <script>
         const carouselItems = [
             {
-                imageSrc: './images/imagemprincipal.png',
+                imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 1',
-                description: 'Descrição do Vídeo 1'
+                idVideo: '1'
             },
             {
                 imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 2',
-                description: 'Descrição do Vídeo 2'
+                idVideo: '1'
             },
             {
                 imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 3',
-                description: 'Descrição do Vídeo 3'
+                idVideo: '1'
             },
             {
                 imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 4',
-                description: 'Descrição do Vídeo 4'
+                idVideo: '1'
             },
             {
                 imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 5',
-                description: 'Descrição do Vídeo 5'
+                idVideo: '1'
             },
             {
                 imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 6',
-                description: 'Descrição do Vídeo 6'
+                idVideo: '1'
             },
             {
                 imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 7',
-                description: 'Descrição do Vídeo 7'
+                idVideo: '1'
             },
             {
                 imageSrc: './images/ImagemVideos.png',
                 title: 'Título do Vídeo 8',
-                description: 'Descrição do Vídeo 8'
+                idVideo: '1'
             }
         ];
 
@@ -275,7 +275,7 @@
                     <div class="col-12 col-md-6 my-3 d-flex position-relative">
                         <div class="video-thumbnail position-relative">
                             <img src="${item.imageSrc}" alt="Imagem em Destaque" class="img-fluid h-100">
-                            <button class="play-button-thumbnail" data-toggle="modal" data-target="#videoModal">
+                            <button class="play-button-thumbnail" data-toggle="modal" data-target="#videoModal" data-id-video="${item.idVideo}">
                                 <img src="./images/play-button.png" alt="Play Button">
                             </button>
                             <h5 class="video-title">${item.title}</h5>

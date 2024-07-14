@@ -84,7 +84,7 @@
 
 /* Estilização do destaque do vídeo */
 .video-highlight-high {
-    min-height: 500px;
+    min-height: 450px;
     border-radius: 14px;
     position: relative;
     overflow: hidden;
@@ -277,6 +277,7 @@ a {
 
 .carousel-control-next,
 .carousel-control-prev {
+    position: relative !important;
     top: auto !important;
     bottom: auto !important;
     margin: auto !important;
@@ -298,9 +299,16 @@ a {
 @media (max-width: 991px) {
     .description-box {
         padding: 10px !important;
+        font-size: 16px !important;
+        line-height: 22px !important;
     }
 
     .video-highlight-high {
-        min-height: 420px !important;
+        min-height: 400px !important;
+    }
+
+    .descriptionFooter-box {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
     }
 }
