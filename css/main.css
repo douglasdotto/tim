@@ -83,10 +83,16 @@
 }
 
 /* Estilização do destaque do vídeo */
+.video-highlight-high {
+    min-height: 500px;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
 .video-highlight {
     min-height: 190px;
     border-radius: 14px;
-    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
 }
@@ -99,7 +105,6 @@
     max-width: 423px;
     height: 191px;
     border-radius: 14px;
-    opacity: 0.5;
     gap: 0px;
     position: relative;
     overflow: hidden;
@@ -124,6 +129,17 @@
     border-radius: 4px;
 }
 
+.video-title-Principal-high {
+    position: absolute;
+    font-family: 'TIMSans';
+    bottom: 20px;
+    left: 40px;
+    z-index: 1;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
 
 .video-title-Principal {
     position: absolute;
@@ -137,9 +153,14 @@
     border-radius: 4px;
 }
 
+.play-button-high {
+    top: 50% !important;
+    left: 50% !important;
+}
+
 .play-button {
     position: absolute;
-    top: 130px;
+    bottom: 0px;
     left: 80px;
     transform: translate(-50%, -50%);
     width: 53px;
@@ -254,8 +275,32 @@ a {
     width: 0.2px;
 }
 
-@media (max-width: 767.98px) {
+.carousel-control-next,
+.carousel-control-prev {
+    top: auto !important;
+    bottom: auto !important;
+    margin: auto !important;
+}
+
+.owl-dots {
+    display: none !important;
+}
+
+.modal-content,
+.modal-body {
+    border-radius: 25px !important;
+}
+
+.modal-body video {
+    border-radius: 20px !important;
+}
+
+@media (max-width: 991px) {
     .no-w-100-mobile {
         width: auto !important;
+    }
+
+    .description-box {
+        padding: 10px !important;
     }
 }
