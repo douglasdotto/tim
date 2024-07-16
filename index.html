@@ -77,18 +77,18 @@
             <div class="row ms-0 ms-md-5 d-flex justify-content-center align-items-center">
                 <!-- Primeira Coluna: Imagem e Descrição, centralizados -->
                 <div class="col-12 col-md-6 mb-4">
-                    <img data-aos="fade-in" data-aos-duration="1250" class="img-fluid" src="./images/logoTim.png"
+                    <img data-aos="fade-right" data-aos-duration="1500" class="img-fluid" src="./images/logoTim.png"
                         alt="Descrição da primeira imagem">
-                    <p data-aos="fade-in" data-aos-duration="1250" class="mt-2 description-box">
+                    <p data-aos="fade-right" data-aos-duration="1500" class="mt-2 description-box">
                         No Caldeirão com Mion, o palco está liberado para talentos independentes de todo o país.
                         Veja conteúdos exclusivos, conheça um artista diferente toda semana
                         e surpreenda-se com apresentações encantadoras escolhidas pela líder em 5G no Brasil.
                     </p>
                 </div>
                 <!-- Segunda Coluna: Apenas uma Imagem -->
-                <div class="col-12 col-md-4 mb-4 d-flex justify-content-center align-items-end">
-                    <img data-aos="fade-in" data-aos-duration="1250" class="img-fluid header1" src="./images/Mion.png"
-                        alt="Mion">
+                <div class="col-12 col-md-4 mb-4 d-flex justify-content-center align-items-end" data-aos="fade-left"
+                    data-aos-duration="2000">
+                    <img class="img-fluid header1" src="./images/Mion.png" alt="Mion">
                 </div>
             </div>
         </div>
@@ -99,9 +99,12 @@
             <!-- DESTAQUE MAIOR -->
             <div class="row justify-content-center">
                 <div class="col-0 col-md-2"></div>
-                <div class="col-12 col-md-8 my-3 d-flex justify-content-center position-relative video-highlight-high" data-aos="flip-up" data-aos-duration="1250">
+                <div class="col-12 col-md-8 my-3 d-flex justify-content-center position-relative video-highlight-high"
+                    data-aos="flip-down" data-aos-duration="1250">
                     <img src="./images/imagemprincipal.png" alt="Imagem em Destaque" class="w-100 no-w-100-mobile">
-                    <button class="play-button play-button-high" data-toggle="modal" data-target="#videoModal">
+                    <!-- ID VIDEO PRINCIPAL ALTO -->
+                    <button class="play-button play-button-high" data-toggle="modal" data-target="#videoModal"
+                        data-id-video="1">
                         <img src="./images/play-button.png" alt="Play Button">
                     </button>
                     <h4 class="video-title-Principal-high">Título do Vídeo<br>em Destaque</h4>
@@ -112,9 +115,11 @@
             <!-- DESTAQUE MENOR -->
             <div class="row justify-content-center">
                 <div class="col-0 col-md-2"></div>
-                <div class="col-12 col-md-8 my-3 d-flex justify-content-center position-relative video-highlight">
+                <div class="col-12 col-md-8 my-3 d-flex justify-content-center position-relative video-highlight"
+                    data-aos="flip-down" data-aos-duration="1250">
                     <img src="./images/ImagemVideoPrincipal.png" alt="Imagem em Destaque" class="w-100 no-w-100-mobile">
-                    <button class="play-button" data-toggle="modal" data-target="#videoModal">
+                    <!-- ID VIDEO PRINCIPAL PEQUENO -->
+                    <button class="play-button" data-toggle="modal" data-target="#videoModal" data-id-video="12573919">
                         <img src="./images/play-button.png" alt="Play Button">
                     </button>
                     <h4 class="video-title-Principal">Título do Vídeo<br>em Destaque</h4>
@@ -131,10 +136,8 @@
                             <button class="close-button" data-dismiss="modal" aria-label="Close">
                                 <img src="./images/closeVideo.png" alt="Fechar video">
                             </button>
-                            <video controls class="w-100 h-100" id="main-video" style="display: block;">
-                                <source src="./images/video.mp4" type="video/mp4">
-                                Seu navegador não suporta a tag de vídeo.
-                            </video>
+                            <div class="w-100 h-100" id="main-video" data-aos="flip-left" data-aos-duration="1250">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,18 +173,20 @@
     <footer>
         <div class="container position-relative py-5">
             <div class="row">
-                <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center align-items-center"
+                    data-aos="fade-in" data-aos-duration="1250">
                     <img src="./images/footerTim.png" class="bottom-img img-fluid" alt="Footer Image" />
                 </div>
-                <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center align-items-center"
+                    data-aos="fade-in" data-aos-duration="1250">
                     <p class="mb-0 descriptionFooter-box">
                         O sinal da TIM está com você em todas as possibilidades: inclusive na hora de mostrar ao mundo
                         seus maiores talentos. Líder em 5G no Brasil, a operadora embarca no Caldeirão com Mion para
                         descobrir e amplificar novas vozes.
                     </p>
                 </div>
-                <div
-                    class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center justify-content-lg-end align-items-center">
+                <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center justify-content-lg-end align-items-center"
+                    data-aos="fade-in" data-aos-duration="1250">
                     <div class="share-box p-3">
                         <p class="share-text">Gostou do conteúdo?</p>
                         <p class="share-text">Compartilhe com quem vai curtir</p>
@@ -208,9 +213,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="https://s.videos.globo.com/p2/j/api.min.js"></script> -->
+    <script src="https://s.videos.globo.com/p2/j/api.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         const carouselItems = [
@@ -272,7 +277,7 @@
                 }
                 const $lastCarouselItem = $owlCarousel.find('.row-carousel-item').last();
                 const videoHtml = `
-                    <div class="col-12 col-md-6 my-3 d-flex position-relative">
+                    <div class="col-12 col-md-6 my-3 d-flex position-relative" data-aos="flip-down" data-aos-duration="1250">
                         <div class="video-thumbnail position-relative">
                             <img src="${item.imageSrc}" alt="Imagem em Destaque" class="img-fluid h-100">
                             <button class="play-button-thumbnail" data-toggle="modal" data-target="#videoModal" data-id-video="${item.idVideo}">
@@ -340,9 +345,7 @@
             });
 
             $('#videoModal').on('hidden.bs.modal', function () {
-                var video = $(this).find('video')[0];
-                video.pause();
-                video.currentTime = 0;
+                $('#main-video').html("");
             });
 
             // Inicializa a página e a paginação
@@ -351,6 +354,27 @@
             if (carouselItems.length > 0) {
                 $(".carousel").removeClass("d-none");
             }
+
+            $('.close-button').on('click', function () {
+                $('#videoModal').modal('hide');
+            });
+
+            $('.play-button, .play-button-thumbnail').on('click', function (event) {
+                event.preventDefault();
+
+                // Pega o ID do vídeo do botão clicado
+                var videoId = $(this).data('id-video');
+
+                // Configura o player de vídeo
+                new WM.Player({ videosIDs: videoId }).attachTo(document.getElementById('main-video'));
+
+                // Seleciona o modal e exibe
+                var videoModal = $('#videoModal');
+                if (videoModal.length) {
+                    var modal = new bootstrap.Modal(videoModal[0]);
+                    modal.show();
+                }
+            });
         });
     </script>
 </body>

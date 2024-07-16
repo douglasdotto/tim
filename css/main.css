@@ -289,11 +289,18 @@ a {
 
 .modal-content,
 .modal-body {
+    background-color: #000;
+    min-height: 200px;
     border-radius: 25px !important;
 }
 
 .modal-body video {
     border-radius: 20px !important;
+}
+
+.clappr-player {
+    width: 100% !important;
+    border-radius: 25px !important;
 }
 
 @media (max-width: 991px) {
