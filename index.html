@@ -170,6 +170,56 @@
         </div>
     </div>
 
+    <div class="container-backgroundJogo position-relative">
+        <div class="container  position-relative bottom-0">
+            <div class="row justify-content-center">
+                <div class="col-0 col-md-1"></div>
+                <div class="col-12 col-md-9 my-3 d-flex position-relative">
+                    <div class="col-12 col-md-9 ">
+                        <h4 class="text-white h4-jogo">Título do jogo Aqui</h4>
+                        <p class="custom-paragraph text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et lacus et sapien maximus blandit. Etiam condimentum urna ac metus efficitur lacinia. Nulla aliquam elit at ligula consectetur finibus.</p>
+                            <button class="custom-button">
+                                JOGAR
+                                <img src="./images/seta.png" alt="Imagem" class="button-icon">
+                            </button>
+                    </div>
+                    <div class="col-0 col-md-2"></div>
+                    <div class="my-2 d-flex position-relative d-none d-sm-flex">
+                        <div class="image-container">
+                            <img src="./images/Vector.png" alt="Imagem" class="image-background">
+                            <img src="./images/Mion-jogo.png" alt="Imagem" class="image-foreground">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-background3 d-flex flex-column align-items-center justify-content-center mt-negative">
+
+        <div class="container my-3 position-relative bottom-0">
+            <div class="row justify-content-center">
+                <div class="col-0 col-md-2"></div>
+                <div class="col-12 col-md-8 my-3 d-flex position-relative">
+                    <h4 class="text-white">Título do Vídeo Aqui</h4>
+                </div>
+                <div class="col-0 col-md-2"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-0 col-md-2"></div>
+                <div class="col-12 col-md-8 my-3 d-flex justify-content-center position-relative video-highlight-footer"
+                    data-aos="flip-down" data-aos-duration="1250">
+                    <img src="./images/ImagemVideoFundo.png" alt="Imagem em Destaque" class="w-100 no-w-100-mobile">
+                    <button class="play-button-video-footer play-button-footer" data-id-video="12573919">
+                        <img src="./images/botaoVideoFooter.png" alt="Play Button">
+                    </button>
+                </div>
+                <div class="col-0 col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container position-relative py-5">
             <div class="row">
@@ -180,7 +230,8 @@
                 <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center align-items-center"
                     data-aos="fade-in" data-aos-duration="1250">
                     <p class="mb-0 descriptionFooter-box">
-                        O sinal da TIM está com você em todas as possibilidades: inclusive na hora de mostrar ao mundo
+                        O sinal da TIM está com você em todas as possibilidades: inclusive na hora de mostrar ao
+                        mundo
                         seus maiores talentos. Líder em 5G no Brasil, a operadora embarca no Caldeirão com Mion para
                         descobrir e amplificar novas vozes.
                     </p>
@@ -375,6 +426,17 @@
                     modal.show();
                 }
             });
+
+            $('.play-button-video-footer, .play-button-thumbnail').on('click', function (event) {
+                event.preventDefault();
+
+                // Pega o ID do vídeo do botão clicado
+                var videoId = $(this).data('id-video');
+                console.log(videoId);
+                // Configura o player de vídeo
+                new WM.Player({ videosIDs: videoId }).attachTo(document.getElementById('main-video'));
+            });
+
         });
     </script>
 </body>

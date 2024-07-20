@@ -60,6 +60,74 @@
     background-repeat: no-repeat;
 }
 
+.container-backgroundJogo {
+    background-image: url('../images/fundoJogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.h4-jogo {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image-background {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.image-foreground {
+    position: relative;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 11px;
+}
+
+.custom-paragraph {
+    font-family: 'TIMSans';
+    margin-top: 40px;
+    bottom: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+.button-icon {
+    width: 16px; 
+    height: auto; 
+    margin-left: 30px; 
+    vertical-align: middle; 
+}
+.custom-button {
+    color: #0026D9;
+    background-color: white;
+    width: 176px;
+    height: 53px;
+    gap: 0px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #0026D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.75px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+
+
 .description-box {
     font-family: 'TIMSans';
     font-size: 21px;
@@ -81,6 +149,7 @@
     text-align: left;
     color: #FFFFFF;
 }
+
 
 /* Estilização do destaque do vídeo */
 .video-highlight-high {
@@ -158,6 +227,13 @@
     left: 50% !important;
 }
 
+.play-button-footer {
+    top: 37% !important;
+    left: 42% !important;
+    transform: translate(-50%, -50%);
+}
+
+
 .play-button {
     position: absolute;
     bottom: 0px;
@@ -171,6 +247,21 @@
     cursor: pointer;
     z-index: 2;
 }
+
+.play-button-video-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 40x;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
 
 .play-button-thumbnail {
     position: absolute;
@@ -234,6 +325,32 @@ html {
 
 footer {
     background-color: var(--footer);
+}
+
+.container-background3 {
+    position: relative;
+    background-image: url('../images/fundoFooter.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.container-background3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(156, 163, 195, 0) 0%, var(--footer) 100%);
+    pointer-events: none;
+    transition: height 0.3s ease;
+}
+
+.video-highlight-footer {
+    position: relative;
+    z-index: 10;
 }
 
 .secondary-body {
@@ -314,8 +431,22 @@ a {
         min-height: 400px !important;
     }
 
+    .video-highlight-footer {
+        min-height: 400px !important;
+    }
+
     .descriptionFooter-box {
         padding-left: 40px !important;
         padding-right: 40px !important;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .play-button-footer {
+        top: 40% !important;
+        left: 35% !important;
+        transform: translate(-50%, -50%);
     }
 }
