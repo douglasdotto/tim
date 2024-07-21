@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TIMSansL';
+    src: url('../fonts/TIMSans-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     /*Gshow*/
     --gshow-primary: #FF6700;
@@ -75,9 +82,9 @@
 
 .descriptionFooter-box {
     font-family: 'TIMSans';
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 100;
     text-align: left;
     color: #FFFFFF;
 }
@@ -101,9 +108,7 @@
 .video-thumbnail {
     background: #0026D980;
     color: white;
-    width: 423px;
-    max-width: 423px;
-    height: 191px;
+    width: 100%;
     border-radius: 14px;
     gap: 0px;
     position: relative;
@@ -127,6 +132,7 @@
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 4px;
+    text-shadow: 0px 0px 15px black;
 }
 
 .video-title-Principal-high {
@@ -139,6 +145,7 @@
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 4px;
+    text-shadow: 0px 0px 15px black;
 }
 
 .video-title-Principal {
@@ -151,6 +158,7 @@
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 4px;
+    text-shadow: 0px 0px 15px black;
 }
 
 .play-button-high {
@@ -290,7 +298,7 @@ a {
 .modal-content,
 .modal-body {
     background-color: #000;
-    min-height: 200px;
+    min-height: 350px;
     border-radius: 25px !important;
 }
 
@@ -301,6 +309,17 @@ a {
 .clappr-player {
     width: 100% !important;
     border-radius: 25px !important;
+}
+
+.op-075 {
+    opacity: 0.65;
+    border-radius: 20px;
+}
+
+.surpreendase {
+    color: #Fff;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 @media (max-width: 991px) {

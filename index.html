@@ -26,8 +26,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css?v=8">
-    <link rel="stylesheet" href="./css/navbar.css?v=8">
+    <link rel="stylesheet" href="./css/main.css?v=9">
+    <link rel="stylesheet" href="./css/navbar.css?v=9">
 
     <!-- Favicon -->
     <link rel="icon"
@@ -101,13 +101,17 @@
                 <div class="col-0 col-md-2"></div>
                 <div class="col-12 col-md-8 my-3 d-flex justify-content-center position-relative video-highlight-high"
                     data-aos="flip-down" data-aos-duration="1250">
-                    <img src="./images/imagemprincipal.png" alt="Imagem em Destaque" class="w-100 no-w-100-mobile">
+                    <img src="./images/thumb_4_1.jpg" alt="Imagem em Destaque"
+                        class="d-none d-lg-block w-100 no-w-100-mobile op-075">
+                    <img src="./images/thumb_4_2.jpg" alt="Imagem em Destaque"
+                        class="d-block d-lg-none w-100 no-w-100-mobile op-075">
                     <!-- ID VIDEO PRINCIPAL ALTO -->
                     <button class="play-button play-button-high" data-toggle="modal" data-target="#videoModal"
-                        data-id-video="1">
+                        data-id-video="12770192">
                         <img src="./images/play-button.png" alt="Play Button">
                     </button>
-                    <h4 class="video-title-Principal-high">Título do Vídeo<br>em Destaque</h4>
+                    <h4 class="video-title-Principal-high">Ouça o som de Bella Kahun,<br> de Pernambuco
+                    </h4>
                 </div>
                 <div class="col-0 col-md-2"></div>
             </div>
@@ -117,12 +121,16 @@
                 <div class="col-0 col-md-2"></div>
                 <div class="col-12 col-md-8 my-3 d-flex justify-content-center position-relative video-highlight"
                     data-aos="flip-down" data-aos-duration="1250">
-                    <img src="./images/ImagemVideoPrincipal.png" alt="Imagem em Destaque" class="w-100 no-w-100-mobile">
+                    <img src="./images/thumb_1_3.jpg" alt="Imagem em Destaque"
+                        class="d-none d-lg-block w-100 no-w-100-mobile op-075">
+                    <img src="./images/thumb_1_2.jpg" alt="Imagem em Destaque"
+                        class="d-block d-lg-none w-100 no-w-100-mobile op-075">
                     <!-- ID VIDEO PRINCIPAL PEQUENO -->
-                    <button class="play-button" data-toggle="modal" data-target="#videoModal" data-id-video="12573919">
+                    <button class="play-button" data-toggle="modal" data-target="#videoModal" data-id-video="12770203">
                         <img src="./images/play-button.png" alt="Play Button">
                     </button>
-                    <h4 class="video-title-Principal">Título do Vídeo<br>em Destaque</h4>
+                    <h4 class="video-title-Principal">Conheça o talento de <br>Amanda Magalhães, de São Paulo
+                    </h4>
                 </div>
                 <div class="col-0 col-md-2"></div>
             </div>
@@ -130,7 +138,7 @@
             <!-- Modal -->
             <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body position-relative p-0">
                             <button class="close-button" data-dismiss="modal" aria-label="Close">
@@ -173,17 +181,22 @@
     <footer>
         <div class="container position-relative py-5">
             <div class="row">
-                <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center align-items-center"
-                    data-aos="fade-in" data-aos-duration="1250">
-                    <img src="./images/footerTim.png" class="bottom-img img-fluid" alt="Footer Image" />
-                </div>
-                <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center align-items-center"
-                    data-aos="fade-in" data-aos-duration="1250">
-                    <p class="mb-0 descriptionFooter-box">
-                        O sinal da TIM está com você em todas as possibilidades: inclusive na hora de mostrar ao mundo
-                        seus maiores talentos. Líder em 5G no Brasil, a operadora embarca no Caldeirão com Mion para
-                        descobrir e amplificar novas vozes.
-                    </p>
+                <div class="col-12 col-lg-8">
+                    <span class="ms-0 ms-lg-4 surpreendase">SURPREENDA-SE COM A LÍDER EM 5G</span>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 m-auto my-3 d-flex justify-content-center align-items-center"
+                            data-aos="fade-in" data-aos-duration="1250">
+                            <img src="./images/footerTim.png" class="bottom-img img-fluid" alt="Footer Image" />
+                        </div>
+                        <div class="col-12 col-lg-7 m-auto my-3 d-flex justify-content-center align-items-center"
+                            data-aos="fade-in" data-aos-duration="1250">
+                            <p class="mb-0 descriptionFooter-box">
+                                O sinal da TIM está com você em todas as possibilidades: inclusive na hora de mostrar ao
+                                mundo seus maiores talentos. Líder em 5G no Brasil, a operadora embarca no Caldeirão com
+                                Mion para descobrir e amplificar novas vozes.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-4 m-auto my-3 d-flex justify-content-center justify-content-lg-end align-items-center"
                     data-aos="fade-in" data-aos-duration="1250">
@@ -218,48 +231,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        const carouselItems = [
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 1',
-                idVideo: '1'
-            },
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 2',
-                idVideo: '1'
-            },
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 3',
-                idVideo: '1'
-            },
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 4',
-                idVideo: '1'
-            },
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 5',
-                idVideo: '1'
-            },
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 6',
-                idVideo: '1'
-            },
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 7',
-                idVideo: '1'
-            },
-            {
-                imageSrc: './images/ImagemVideos.png',
-                title: 'Título do Vídeo 8',
-                idVideo: '1'
-            }
-        ];
+        const carouselItems = [{
+            imageSrc: './images/thumb_2_3.jpg',
+            title: 'Conheça a música do Mathias,<br> de Minas Gerais',
+            idVideo: '12770200'
+        },
+        {
+            imageSrc: './images/thumb_3_3.jpg',
+            title: 'Robô TIM mostra como <br>participar do Momento TIM 5G',
+            idVideo: '12770201'
+        }];
 
         $(document).ready(function () {
             AOS.init();
@@ -279,7 +260,7 @@
                 const videoHtml = `
                     <div class="col-12 col-md-6 my-3 d-flex position-relative" data-aos="flip-down" data-aos-duration="1250">
                         <div class="video-thumbnail position-relative">
-                            <img src="${item.imageSrc}" alt="Imagem em Destaque" class="img-fluid h-100">
+                            <img src="${item.imageSrc}" alt="Imagem em Destaque" class="img-fluid h-100 op-075">
                             <button class="play-button-thumbnail" data-toggle="modal" data-target="#videoModal" data-id-video="${item.idVideo}">
                                 <img src="./images/play-button.png" alt="Play Button">
                             </button>
